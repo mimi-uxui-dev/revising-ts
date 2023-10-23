@@ -1,0 +1,13 @@
+{
+  "name": "revising-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Mimi T Khoudour",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
