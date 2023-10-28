@@ -12,4 +12,15 @@ const number2 = 3.7;
 const printResult = true;
 const resultPhrase = "Result is: ";
 
-add(number1, number2, printResult, resultPhrase);
+// add(number1, number2, printResult, resultPhrase);
+
+// Type objects
+const person: {
+  name: string;
+  age: number;
+} = {
+  name: "Mimi",
+  age: 28,
+};
+
+console.log(person.name);
