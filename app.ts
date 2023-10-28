@@ -18,12 +18,18 @@ const resultPhrase = "Result is: ";
 const person: {
   name: string;
   age: number;
+  hobbies: string[];
 } = {
   name: "Mimi",
   age: 28,
+  hobbies: ["cooking", "dancing"],
 };
 
-console.log(person.name);
+// console.log(person.name);
+
+for (const hobby in person.hobbies) {
+  console.log(hobby.toLocaleUpperCase());
+}
 
 const product: {
   id: string;
@@ -43,4 +49,7 @@ const product: {
   },
 };
 
-console.log(product.id);
+let favActivies: any[];
+favActivies = ["Sports", 7];
+
+//  console.log(product.id);
