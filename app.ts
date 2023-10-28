@@ -55,12 +55,16 @@ favActivies = ["Sports", 7];
 //  console.log(product.id);
 
 // Enum
-
 enum Role {
-  ADMIN,
-  READ_ONLY,
-  AUTHOR,
+  ADMIN = "ADMIN",
+  READ_ONLY = 100,
+  AUTHOR = 200,
 }
+// enum Role {
+//   ADMIN,
+//   READ_ONLY,
+//   AUTHOR,
+// }
 
 const person1 = {
   name: "baby",
@@ -68,7 +72,6 @@ const person1 = {
   hobbies: ["drawing", "dancing"],
   role: Role.ADMIN,
 };
-
-if (person1.role === Role.ADMIN) {
-  console.log("yes its an admin");
-}
+// if (person1.role === Role.ADMIN) {
+//   console.log("yes its an admin");
+// }
