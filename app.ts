@@ -19,7 +19,18 @@ function combine(
 }
 
 const combineAges = combine(1, 2, "as-number");
-console.log(combineAges);
+// console.log(combineAges);
 
 const combineNames = combine("Mimi", "Jade", "as-text");
-console.log(combineNames);
+// console.log(combineNames);
+
+type User = { name: string; age: number };
+const u1: User = { name: "Max", age: 30 }; // this works!
+
+function greet(user: User) {
+  console.log("Hi, I am " + user.name);
+}
+
+function isOlder(user: User, checkAge: number) {
+  return checkAge > user.age;
+}
