@@ -19,17 +19,17 @@ const person: {
   name: string;
   age: number;
   hobbies: string[];
+  role: [number, string]; //this is a tuple aka a special array
 } = {
   name: "Mimi",
   age: 28,
   hobbies: ["cooking", "dancing"],
+  role: [1, "author"],
 };
 
-// console.log(person.name);
-
-for (const hobby in person.hobbies) {
-  console.log(hobby.toLocaleUpperCase());
-}
+// for (const hobby in person.hobbies) {
+//   console.log(hobby.toLocaleUpperCase());
+// }
 
 const product: {
   id: string;
