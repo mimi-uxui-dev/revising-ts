@@ -27,3 +27,12 @@ accounting.describe();
 accounting.addEmployee("Mimi");
 accounting.addEmployee("Dianna");
 accounting.printEmployeeInfo();
+
+// inheritance
+class ITDepartment extends Department {
+  admins: string[];
+  constructor(id: string, admins: string[]) {
+    super(id, "ITD");
+    this.admins = admins;
+  }
+}
